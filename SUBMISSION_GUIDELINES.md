@@ -2,6 +2,12 @@
 
 Open Flow documents interface design, not the people using an interface. Every contributor must remove personal, private, identifying, and secret information before uploading anything.
 
+## Submit through the form
+
+Use the [Open Flow submission form](https://forms.gle/ojEQb2b76MGAzRDx7) to send screenshots and flows for manual review. Do not upload submissions directly to the public repository.
+
+The form is a private intake step. A submission is not automatically accepted, published, or added to the dataset. Contributors should upload only sanitized files and should keep screenshot order clear for complete flows.
+
 ## The main rule
 
 If it identifies, shows, describes, contacts, tracks, or belongs to a real person, blur or remove it.
@@ -109,4 +115,3 @@ Before submitting, confirm:
 - [ ] Every screen in the flow was checked at full size.
 
 When in doubt, blur it or leave it out.
-
