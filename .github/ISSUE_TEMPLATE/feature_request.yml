@@ -1,0 +1,34 @@
+name: Feature request
+description: Suggest an improvement to Open Flow
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is difficult or missing today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the smallest useful solution.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Project fit
+      options:
+        - label: This supports Open Flow's screens and flows mission.
+          required: true
+        - label: This does not require collecting unnecessary personal data.
+          required: true
+
