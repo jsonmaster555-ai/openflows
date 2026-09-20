@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openflow.example/schemas/app.schema.json",
+  "title": "Open Flow Product",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "name", "slug", "platforms", "categories"],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "description": { "type": "string", "maxLength": 300 },
+    "platforms": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "enum": ["ios", "android", "web", "desktop", "tablet", "watch", "tv", "other"] }
+    },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }
+    },
+    "officialUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
+    "notes": { "type": "string", "maxLength": 1000 }
+  }
+}
+
