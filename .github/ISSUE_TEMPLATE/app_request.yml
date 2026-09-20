@@ -1,0 +1,45 @@
+name: Product request
+description: Request screens or flows for a product
+title: "[Product request]: "
+labels:
+  - product-request
+body:
+  - type: input
+    id: product
+    attributes:
+      label: Product name
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      multiple: true
+      options:
+        - iOS
+        - Android
+        - Web
+        - Desktop
+        - Tablet
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: flows
+    attributes:
+      label: Requested screens or flows
+      description: List the specific interface references that would be useful.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why it would be useful
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Privacy
+      options:
+        - label: I understand that requests must not include private accounts personal data or unredacted people.
+          required: true
+
