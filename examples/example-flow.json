@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "id": "example-app-ios-checkout",
+  "product": "example-app",
+  "platform": "ios",
+  "name": "Checkout",
+  "description": "Example ordered checkout flow using fictional screen IDs.",
+  "screens": [
+    "example-app-ios-cart",
+    "example-app-ios-checkout-address",
+    "example-app-ios-checkout-payment",
+    "example-app-ios-order-confirmation"
+  ],
+  "tags": ["checkout", "commerce"],
+  "privacyReviewed": true,
+  "submittedBy": "@example-contributor"
+}
+
