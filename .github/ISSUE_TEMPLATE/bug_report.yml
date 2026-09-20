@@ -1,0 +1,42 @@
+name: Bug report
+description: Report a reproducible problem with Open Flow
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Do not include personal data screenshots credentials or security details. Use private security reporting for sensitive issues.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened
+      description: Explain the problem clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open...\n2. Select...\n3. See..."
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser operating system and device type when relevant.
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed personal information secrets and private content from this report.
+          required: true
+
