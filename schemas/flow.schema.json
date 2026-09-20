@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openflow.example/schemas/flow.schema.json",
+  "title": "Open Flow Flow",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "product", "platform", "name", "screens", "privacyReviewed", "submittedBy"],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "product": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "platform": { "enum": ["ios", "android", "web", "desktop", "tablet", "watch", "tv", "other"] },
+    "name": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "description": { "type": "string", "maxLength": 500 },
+    "screens": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }
+    },
+    "tags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }
+    },
+    "privacyReviewed": { "const": true },
+    "submittedBy": { "type": "string", "pattern": "^@[A-Za-z0-9-]+$" },
+    "notes": { "type": "string", "maxLength": 1000 }
+  }
+}
+
