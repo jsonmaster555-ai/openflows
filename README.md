@@ -25,6 +25,24 @@ Every submission must be sanitized **before it is uploaded**.
 
 Read [SUBMISSION_GUIDELINES.md](SUBMISSION_GUIDELINES.md) before contributing media. If something might identify a person, blur it.
 
+## Submit screens and flows
+
+Want to contribute a screen or complete flow? Use the private submission form below. Submissions are reviewed manually before anything is added to the repository.
+
+<table>
+  <tr>
+    <td>
+      <strong>Contribute to Open Flow</strong><br />
+      Upload sanitized screenshots and interface flows for review.
+    </td>
+    <td align="right">
+      <a href="https://forms.gle/ojEQb2b76MGAzRDx7"><strong>Open submission form →</strong></a>
+    </td>
+  </tr>
+</table>
+
+The form collects screenshots privately for moderation. Read [SUBMISSION_GUIDELINES.md](SUBMISSION_GUIDELINES.md) before uploading.
+
 ## Repository layout
 
 ```text
@@ -93,4 +111,3 @@ Third-party screenshots, logos, product names, trademarks, and other submitted m
 ## Status
 
 Open Flow is in its foundation stage. The file structure and schemas may change before the first stable release.
-
