@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Sensitive privacy or security report
+    url: https://github.com/jsonmaster555-ai/open-flow/security/advisories/new
+    about: Report exposed personal data secrets or vulnerabilities privately
+  - name: Questions and ideas
+    url: https://github.com/jsonmaster555-ai/open-flow/discussions
+    about: Ask questions or discuss larger ideas
+
