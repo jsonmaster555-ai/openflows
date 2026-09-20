@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1.0",
+  "name": "Example App",
+  "slug": "example-app",
+  "description": "Fictional metadata demonstrating the Open Flow format.",
+  "platforms": ["ios", "web"],
+  "categories": ["productivity"]
+}
+
