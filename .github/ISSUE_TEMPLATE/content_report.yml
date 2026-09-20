@@ -1,0 +1,37 @@
+name: Content report
+description: Report duplicate mislabeled unsafe or policy-breaking content
+title: "[Content report]: "
+labels:
+  - content-review
+body:
+  - type: markdown
+    attributes:
+      value: If the report contains exposed personal data secrets or private information stop and use private security reporting instead.
+  - type: input
+    id: location
+    attributes:
+      label: Repository path or public URL
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Reason
+      options:
+        - Duplicate
+        - Incorrect metadata
+        - Poor image quality
+        - Privacy concern without exposed sensitive details
+        - Copyright or trademark concern
+        - Misleading or manipulated content
+        - Other policy concern
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Explain the concern without repeating personal information.
+    validations:
+      required: true
+
