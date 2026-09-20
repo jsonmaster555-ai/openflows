@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0",
+  "id": "example-app-ios-checkout-payment",
+  "product": "example-app",
+  "platform": "ios",
+  "name": "Checkout payment",
+  "asset": "checkout-payment.png",
+  "captured": "2026-09",
+  "region": "United States",
+  "device": "iPhone",
+  "locale": "en-US",
+  "tags": ["checkout", "payment"],
+  "privacyReviewed": true,
+  "usesTestData": true,
+  "submittedBy": "@example-contributor"
+}
+
